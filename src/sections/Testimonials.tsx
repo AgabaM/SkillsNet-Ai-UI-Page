@@ -1,9 +1,9 @@
 "use client"
 import React from "react";
-import AshwinSantiago from "@/assets/images/ashwin-santiago.jpg";
-import AlecWhitten from "@/assets/images/alec-whitten.jpg";
-import ReneWells from "@/assets/images/rene-wells.jpg";
-import MollieHall from "@/assets/images/mollie-hall.jpg";
+import Gaffy from "@/assets/images/Gaffy.jpg";
+import Ghost from "@/assets/images/Ghost-Guy.jpg";
+import Hacker from "@/assets/images/Hacker.jpg";
+import WolfGuy from "@/assets/images/WolfGuffy.jpg";
 import SectionBorder from "@/components/SectionBorder";
 import SectionContent from "@/components/SectionContent";
 import Image from 'next/image'
