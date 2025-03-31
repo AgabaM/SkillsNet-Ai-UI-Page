@@ -1,4 +1,5 @@
 'use client';
+import React from "react";
 import robotImg from '@/assets/images/robot.jpg';
 import underlineImage from '@/assets/images/underline.svg?url';
 import Loader from '@/assets/images/loader-animated.svg';
@@ -38,12 +39,7 @@ const useMousePosition = () => {
     }, []);
 
     useEffect(() => {
-        interface MouseMoveEvent extends MouseEvent {
-            clientX: number;
-            clientY: number;
-        }
-
-        const handleMouseMove = (e: MouseMoveEvent): void => {
+        const handleMouseMove = (e: MouseEvent): void => {
             clientX.set(e.clientX);
             clientY.set(e.clientY);
         };
@@ -51,6 +47,8 @@ const useMousePosition = () => {
         window.addEventListener('mousemove', handleMouseMove);
 
         return () => window.removeEventListener('mousemove', handleMouseMove);
+
+         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [clientX, clientY]);
 
     return { xProgress, yProgress, innerWidth, innerHeight };
