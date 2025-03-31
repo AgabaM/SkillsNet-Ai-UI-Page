@@ -16,30 +16,30 @@ export const testimonials = [
   {
     quote:
       "SkillsNet has completely transformed the way we collaborate. The AI chatbot's ability to automate tasks and provide insightful recommendations has saved us hours each week. It's now an indispensable part of our workflow.",
-    name: "Ashwin Santiago",
+    name: "Axin Bender",
     title: "Operations Manager",
-    image: AshwinSantiago,
+    image: Gaffy,
   },
   {
     quote:
       "SkillsNet integrates effortlessly with our existing tools, and the AI chatbot feels like a natural extension of our team. The responses are impressively accurate, and it's always learning from our interactions.",
-    name: "Alec Whitten",
+    name: "Ghost Coder",
     title: "Lead Developer",
-    image: AlecWhitten,
+    image: Ghost,
   },
   {
     quote:
       "SkillsNet's AI has elevated our customer service to a whole new level. Its real-time responses and personalized recommendations help us address client needs faster than ever. I can't imagine our support team without it.",
-    name: "Rene Wells",
+    name: "Hacker XYZ",
     title: "Customer Success Manager",
-    image: ReneWells,
+    image: Hacker,
   },
   {
     quote:
       "I've never seen a tool like SkillsNet. It's intuitive, responsive, and has helped us streamline projects that would normally take days. The AI capabilities are unmatched in terms of accuracy and speed.",
-    name: "Mollie Hall",
+    name: "KPX Saga",
     title: "Product Designer",
-    image: MollieHall,
+    image: WolfGuy,
   },
 ];
 
