@@ -38,7 +38,12 @@ const useMousePosition = () => {
     }, []);
 
     useEffect(() => {
-        const handleMouseMove = (e) => {
+        interface MouseMoveEvent extends MouseEvent {
+            clientX: number;
+            clientY: number;
+        }
+
+        const handleMouseMove = (e: MouseMoveEvent): void => {
             clientX.set(e.clientX);
             clientY.set(e.clientY);
         };
@@ -46,7 +51,7 @@ const useMousePosition = () => {
         window.addEventListener('mousemove', handleMouseMove);
 
         return () => window.removeEventListener('mousemove', handleMouseMove);
-    }, []);
+    }, [clientX, clientY]);
 
     return { xProgress, yProgress, innerWidth, innerHeight };
 };
